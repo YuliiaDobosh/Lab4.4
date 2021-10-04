@@ -24,15 +24,21 @@ int main()
 				y = R - sqrt(R * R - x * x);
 			else
 				if (R < x && x <= 6)
-					y = R + (1 / 2 * x) - (1 / 2 * R);
+					y = R + ((R + 3) / (R - 6)) * (x - R);
 				else
-					y = -2 * x + 12;
-	cout << "|" << setw(10) << setprecision(3) << x
-		<< " |" << setw(10) << setprecision(3) << y
-		<< " |" << endl;
-	x += dx;
-}
+					y = x - 9;
+		cout << "|" << setw(10) << setprecision(3) << x
+			<< " |" << setw(10) << setprecision(3) << y
+			<< " |" << endl;
+		x += dx;
+	}
 	cout << "---------------------------" << endl;
-return 0;
+	return 0;
 }
-	
+
+
+
+
+
+
+
